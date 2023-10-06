@@ -50,39 +50,39 @@ export default function Home() {
 
   return (
     <main className="bg-[url('/img/background.png')] h-screen w-screen overflow-hidden p-4 py-8">
-      <h1 className="font-medium text-3xl">
+      <h1 className="font-medium text-3xl text-center">
         Kai<span className="text-blue-600">Z</span>en
       </h1>
-      <div className="p-4 flex flex-col-reverse justify-around lg:flex-row lg:justify-between items-center w-full h-full lg:p-16">
+      <div className="p-4 flex flex-col justify-around lg:flex-row lg:justify-between items-center w-full h-full lg:p-16">
         <div className="w-full lg:w-1/2 flex flex-col gap-10">
-          <h1 className="text-4xl lg:text-6xl font-bold">
+          <h1 className="text-4xl lg:text-6xl font-bold text-center lg:text-left">
             We are <span className="text-blue-600">Coming</span> soon.
           </h1>
 
-          <div className="flex items-start gap-4 lg:gap-16">
-            <span className="flex flex-col text-xs">
+          <div className="flex flex-row justify-center items-center lg:items-start gap-4 lg:gap-16">
+            <span className="flex flex-col text-xs text-center lg:text-left">
               <span className="text-4xl lg:text-5xl">{time.days}</span>
               Days
             </span>
-            <span className="flex flex-col text-xs">
+            <span className="flex flex-col text-xs text-center lg:text-left">
               <span className="text-4xl lg:text-5xl">{time.hours}</span>
               Hours
             </span>
-            <span className="flex flex-col text-xs">
+            <span className="flex flex-col text-xs text-center lg:text-left">
               <span className="text-4xl lg:text-5xl">{time.minutes}</span>
               Minutes
             </span>
-            <span className="flex flex-col text-xs">
+            <span className="flex flex-col text-xs text-center lg:text-left">
               <span className="text-4xl lg:text-5xl">{time.seconds}</span>
               Seconds
             </span>
           </div>
-          <span className="text-base leading-7">
+          <span className="text-base leading-7 text-center lg:text-left">
             The user interface is currently being designed and developed. <br />
             In the meantime, you can take a look at our API specification
             document.
           </span>
-          <div>
+          <div className="text-center lg:text-left">
             <a
               href="https://kaizen-api-30at.onrender.com/api/document"
               rel="noreferrer"
@@ -92,7 +92,7 @@ export default function Home() {
             </a>
           </div>
         </div>
-        <div className="rocket-container lg:w-1/4 mt-0 lg:mt-0">
+        <div className="rocket-container w-1/4 mt-4 lg:mt-0 mx-auto">
           <Image
             className="rocket"
             src="/img/rocket.png"
