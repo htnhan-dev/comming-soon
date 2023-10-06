@@ -50,7 +50,7 @@ export default function Home() {
 
   return (
     <main className="bg-[url('/img/background.png')] h-screen w-screen overflow-hidden p-4 py-8">
-      <h1 className="font-medium text-3xl text-center">
+      <h1 className="font-medium text-3xl text-center lg:text-left lg:pl-8">
         Kai<span className="text-blue-600">Z</span>en
       </h1>
       <div className="p-4 flex flex-col justify-around lg:flex-row lg:justify-between items-center w-full h-full lg:p-16">
@@ -59,7 +59,7 @@ export default function Home() {
             We are <span className="text-blue-600">Coming</span> soon.
           </h1>
 
-          <div className="flex flex-row justify-center items-center lg:items-start gap-4 lg:gap-16">
+          <div className="flex flex-row justify-center items-center lg:items-start lg:justify-start gap-4 lg:gap-16">
             <span className="flex flex-col text-xs text-center lg:text-left">
               <span className="text-4xl lg:text-5xl">{time.days}</span>
               Days
@@ -92,7 +92,7 @@ export default function Home() {
             </a>
           </div>
         </div>
-        <div className="rocket-container w-1/4 mt-4 lg:mt-0 mx-auto">
+        <div className="rocket-container w-1/4 mt-4 lg:mt-0 mx-auto lg:w-1/5">
           <Image
             className="rocket"
             src="/img/rocket.png"
