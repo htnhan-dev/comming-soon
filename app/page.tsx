@@ -49,7 +49,7 @@ export default function Home() {
   }, []);
 
   return (
-    <main className="bg-[url('/img/background.png')] h-screen w-screen overflow-hidden p-4 py-8">
+    <main className="bg-[url('/img/background.png')] h-screen w-screen overflow-hidden p-4 py-8 text-white">
       <h1 className="font-medium text-3xl text-center lg:text-left lg:pl-8">
         Kai<span className="text-blue-600">Z</span>en
       </h1>
